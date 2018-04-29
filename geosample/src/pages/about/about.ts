@@ -1,3 +1,4 @@
+import { SamplePage } from './../sample/sample';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -12,7 +13,7 @@ export class AboutPage {
   }
 
   navigate() {
-    this.navCtrl.push('my-page');
+    this.navCtrl.push('SamplePage');
   }
 
 }

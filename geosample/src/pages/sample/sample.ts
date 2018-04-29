@@ -10,8 +10,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage({
-  name: 'my-page',
-  segment: 'some-path'
+  name: 'SamplePage',
+  segment: 'Sample',
+  defaultHistory: ['AboutPage']
 })
 @Component({
   selector: 'page-sample',
@@ -20,6 +21,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SamplePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log("Loaded");
   }
 
   ionViewDidLoad() {
